@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./img1.svg">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avalie a sua mentoria</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="cabecalho">
+        <h1>AVALIE A SUA MENTORIA</h1>
+        <h2 style="font-family: 'Poppins', sans-serif">
+          Chegou a hora de avaliar o seu mentor. Bora lá?
+        </h2>
+        <img src="./img1.svg" alt="imagem ilustrativa" />
+
+        <h3>INFORMAÇÕES PESSOAIS</h3>
+      </header>
+
+      <form action="#" class="formulario" id="formulario">
+        <div class="div-nome-sobrenome">
+          <div class="div-wrapper">
+            <label for="input-nome">Nome</label>
+            <input type="text" id="input-nome" required/>
+          </div>
+
+          <div class="div-wrapper">
+            <label for="input-sobrenome">Sobrenome</label>
+            <input type="text" id="input-sobrenome" required/>
+          </div>
+        </div>
+
+        <div class="div-wrapper">
+          <label for="input-email"
+            >Email <span>(digite um email válido)</span></label
+          >
+          <input type="email" id="input-email" required/>
+        </div>
+
+        <p>INFORMAÇÕES DO MENTOR</p>
+
+        <div class="line"></div>
+
+        <div class="div-wrapper">
+          <label for="input-select">Selecione quem foi o seu mentor</label>
+          <select name="input-select" id="input-select" class="input-select" required>
+            <option value="" data-default disabled selected></option>
+            <option value="Maiky-Brito">Maiky Brito</option>
+            <option value="Diego">Diego</option>
+            <option value="Doug">Doug</option>
+          </select>
+        </div>
+
+        <div class="div-wrapper">
+          <label for="input-feedback">Feedback sobre o mentor</label>
+          <textarea
+            name="input-feedback"
+            id="input-feedback"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+
+        <div class="div-checkbox">
+          <input type="checkbox" id="input-checkbox" />
+          <label for="input-checkbox"
+            >Todas as minhas dúvidas foram esclarecidas durante a
+            mentoria.</label
+          >
+        </div>
+
+        <p>AGENDANDO PRÓXIMA MENTORIA</p>
+
+        <div class="datas">
+          <div class="div-label-date">
+            <label for="input-data">Data</label>
+
+            <div class="div-separacao">
+              <label for="input-data">Das</label>
+              <label for="input-data">Até</label>
+            </div>
+          </div>
+
+          <div class="div-input-date">
+            <input type="date" id="input-data" style="width: 200px" />
+
+            <div class="div">
+              <input type="datetime" id="input-data" />
+              <input type="datetime" id="input-data" />
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <input type="submit" form="formulario" />
+        </footer>
+      </form>
+    </div>
+  </body>
+</html>
